@@ -26,4 +26,51 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+ 
+}
+ img { 
+  width:100%;
+ }
+
+
+
+ .group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+ }
+
+ .item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.coffee-background{
+  background-color: rgb(153, 104, 69);
+}
+ /* Groups and items (Desktop) */
+
+
+@media all and (min-width: 800px) {
+
+  section,
+
+  h1 { padding: 0 10%;
+    }
+
+
+  .group { 
+    flex-direction: row;
+  }
+  .wide-left-margin{
+    margin-left: 40px;
+  }
+  .wide-right-margin{
+    margin-right: 40px;
+    
+  }
 }
